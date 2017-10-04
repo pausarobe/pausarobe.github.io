@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <style>
+    .body {
+        border: 1px solid #aaa;
+        _width: 100%;
+        margin: 30px;
+        padding: 20px;
+        border-radius: 10px;
+        font-size: 1.5em;
+    }
+
+    h1 {
+        color: #1ED760;
+    }
+
+    #tracks h3 {
+        color: #1ED760;
+    }
+
+    .spotify {
+        height: 60px;
+    }
+
+    #tracks li{
+        list-style: none;
+    }
+    </style>
+</head>
+
+<body class="body">
+    <div class="container">
+        <div class="container">
+            <h1><img src="img-bs/spotify.png" class="spotify">Spotyfinder</h1>
+            <form id="search">
+                <input class="input-lg" type="" name="query">
+                <button class="btn btn-lg btn-primary">Search Artist</button>
+            </form>
+        </div>
+        <div id="artists">
+            <div class="container">
+                <h1>Artists</h1>
+                <select class="input-lg"></select>
+            </div>
+        </div>
+        <div id="albums">
+            <div class="container">
+                <h1>Albums</h1>
+                <select class="input-lg"></select>
+            </div>
+        </div>
+        <div class="container">
+            <div id="tracks">
+                <h3>Tracks</h3>
+                <ul>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.0.3.min.js"></script>
+    <script src="scripts/Spotify.js"></script>
+</body>
+
+</html>
